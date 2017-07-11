@@ -27,6 +27,10 @@ unit='celsius'
 wind-speed-unit='kph'
 
 
+[org/gnome/shell/extensions/topicons]
+tray-pos='right'
+
+
 [org/gnome/desktop/datetime]
 automatic-timezone=true
 
