@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Zotero
+Comment=Open-source reference manager (standalone version)
+Exec=/opt/Zotero_linux-x86_64/zotero
+Icon=zotero
+Type=Application
+StartupNotify=true

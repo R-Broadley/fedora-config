@@ -1,0 +1,5 @@
+[org/gnome/desktop/interface]
+clock-show-date=true
+gtk-theme='Arc'
+icon-theme='Papirus'
+show-battery-percentage=true

@@ -1,0 +1,3 @@
+[org/gnome/nautilus/preferences]
+click-policy='double'
+sort-directories-first=true

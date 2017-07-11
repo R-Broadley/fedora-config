@@ -1,0 +1,12 @@
+[org/gnome/desktop/input-sources]
+sources=[('xkb', 'gb')]
+
+
+[org/gnome/settings-daemon/plugins/media-keys]
+screenshot-clip='Print'
+screenshot='<Ctrl>Print'
+window-screenshot-clip='<Alt>Print'
+window-screenshot='<Ctrl><Alt>Print'
+area-screenshot-clip='<Shift>Print'
+area-screenshot='<Ctrl><Shift>Print'
+
