@@ -10,7 +10,7 @@ fi
 # Set Hostname
 echo 'Enter a Hostname:'
 read hstnme
-hostnamectl set-hostname $hstnme
+echo $hstnme > /etc/hostname
 
 
 # Lock the root account
