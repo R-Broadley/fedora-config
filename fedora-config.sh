@@ -117,9 +117,11 @@ rsync -rlDu --chmod=D775,F664 Templates /etc/skel
 # For existing users:
 for dir in /home/*; do
     if [ ! $dir = "/home/lost+found" ]; then
+        # Get user name
+        user="$(basename $dir)"
         # File Templates
         rsync -a Templates $dir
-        user="$(basename $dir)"
+        chown $user:$user -R $dir/Templates
         # Reset all dconf keys to default
         sudo -u $user dconf reset -f /
     fi
