@@ -89,7 +89,7 @@ translate=true
 
 [org/gnome/desktop/app-folders/folders/utilities]
 name='Utilities.directory'
-apps=['dropbox.desktop', 'evince.desktop', 'simple-scan.desktop']
+apps=['dropbox.desktop', 'evince.desktop', 'org.gnome.DejaDup.desktop', 'simple-scan.desktop']
 categories=['Utility']
-excluded-apps=['gnome-tweak-tool.desktop', 'keepassx2.desktop', 'org.gnome.gedit.desktop', 'org.gnome.Nautilus.desktop']
+excluded-apps=['atom.desktop', 'gnome-tweak-tool.desktop', 'keepassx2.desktop', 'org.gnome.Nautilus.desktop']
 translate=true
