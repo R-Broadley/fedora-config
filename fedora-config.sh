@@ -69,11 +69,11 @@ dnf install -y google-chrome-stable_current_x86_64.rpm
 rm google-chrome-stable_current_x86_64.rpm
 
 # Zotero
-wget https://download.zotero.org/client/release/5.0.21/Zotero-5.0.21_linux-x86_64.tar.bz2
-tar xfj Zotero-5.0.21_linux-x86_64.tar.bz2 -C /opt
+wget https://download.zotero.org/client/release/5.0.23/Zotero-5.0.23_linux-x86_64.tar.bz2
+tar xfj Zotero-5.0.23_linux-x86_64.tar.bz2 -C /opt
 rsync -Du --chmod=664 applications/zotero/zotero.desktop /usr/share/applications
 rsync -rlDu --chmod=D775,F664 applications/zotero/icons /usr/share
-rm Zotero-5.0.21_linux-x86_64.tar.bz2
+rm Zotero-5.0.23_linux-x86_64.tar.bz2
 
 
 # Shell extensions
