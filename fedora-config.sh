@@ -39,7 +39,7 @@ dnf install -y nano
 dnf install -y deja-dup deja-dup-nautilus epiphany gedit-code-assistance gedit-plugins geary gimp gnome-{music,terminal-nautilus,tweak-tool} gthumb simple-scan
 
 # Keepassx
-dnf install -y keepassx
+dnf install -y keepassxc
 
 # Dropbox
 dnf install -y dropbox nautilus-dropbox
