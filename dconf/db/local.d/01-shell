@@ -1,5 +1,5 @@
 [org/gnome/shell]
-favorite-apps=['org.gnome.Nautilus.desktop', 'google-chrome.desktop', 'libreoffice-writer.desktop']
+favorite-apps=['org.gnome.Nautilus.desktop', 'firefox.desktop', 'libreoffice-writer.desktop']
 enabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'alternate-tab@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'openweather-extension@jenslody.de', 'TopIcons@phocean.net', 'dash-to-dock@micxgx.gmail.com']
 
 
