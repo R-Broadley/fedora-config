@@ -80,7 +80,7 @@ rm Zotero-5.0.23_linux-x86_64.tar.bz2
 # From repos
 dnf install -y gnome-shell-extension-{alternate-tab,common,drive-menu,openweather,places-menu,pomodoro,topicons-plus}
 # dash-to-dock
-wget -O extension.zip "https://extensions.gnome.org/download-extension/dash-to-dock@micxgx.gmail.com.shell-extension.zip?version_tag=6265"
+wget -O extension.zip "https://extensions.gnome.org/review/download/7315.shell-extension.zip"
 mkdir -p "/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com"
 unzip -oqq extension.zip -d "/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com"
 chmod -R o+r "/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com"
