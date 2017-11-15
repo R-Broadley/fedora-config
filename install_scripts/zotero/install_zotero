@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -e
+
+version=5.0.25
+
+wget https://download.zotero.org/client/release/"$version"/Zotero-"$version"_linux-x86_64.tar.bz2
+sudo tar xfj Zotero-"$version"_linux-x86_64.tar.bz2 -C /opt
+sudo rsync -Du --chmod=664 resources/zotero.desktop /usr/share/applications
+sudo rsync -rlDu --chmod=D775,F664 resources/icons /usr/share
+rm "Zotero-"$version"_linux-x86_64.tar.bz2"
+

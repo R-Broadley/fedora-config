@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set -e
+./../../check_root
+
+wget -O extension.zip "https://extensions.gnome.org/review/download/7315.shell-extension.zip"
+mkdir -p "/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com"
+unzip -oqq extension.zip -d "/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com"
+chmod -R o+r "/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com"
+rm extension.zip
+# Install gschemas
+cp "/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/schemas/org.gnome.shell.extensions.dash-to-dock.gschema.xml" /usr/share/glib-2.0/schemas
+# 2> /dev/null prevents warnings / errors from displaying
+glib-compile-schemas /usr/share/glib-2.0/schemas 2> /dev/null
+

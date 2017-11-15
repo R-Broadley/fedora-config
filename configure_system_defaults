@@ -1,0 +1,17 @@
+#!/bin/bash
+
+set -e
+./../../check_root
+
+# Install custom dconf profiles
+# Install gschemas
+rsync -rlDu --chmod=D775,F664 schemas /usr/share/glib-2.0
+# 2> /dev/null prevents warnings / errors from displaying
+glib-compile-schemas /usr/share/glib-2.0/schemas 2> /dev/null
+# Set defaults
+rsync -rlDu --chmod=D775,F664 dconf /etc
+dconf update
+
+# File Templates
+rsync -rlDu --chmod=D775,F664 Templates /etc/skel
+
