@@ -28,7 +28,7 @@ dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-
 # System Software
 
 # GUI software
-dnf remove -y cheese eog evolution firefox gnome-{boxes,characters,clocks,documents,font-viewer,maps} rhythmbox shotwell
+dnf remove -y cheese eog evolution gnome-{boxes,characters,clocks,documents,font-viewer,maps} rhythmbox shotwell
 
 
 # Software Installs
@@ -36,7 +36,7 @@ dnf remove -y cheese eog evolution firefox gnome-{boxes,characters,clocks,docume
 dnf install -y nano
 
 # Generic OS GUI software and Gnome packages
-dnf install -y deja-dup deja-dup-nautilus epiphany gedit-code-assistance gedit-plugins geary gimp gnome-{music,terminal-nautilus,tweak-tool} gthumb simple-scan
+dnf install -y deja-dup deja-dup-nautilus gedit-code-assistance gedit-plugins geary gimp gnome-{music,terminal-nautilus,tweak-tool} gthumb simple-scan
 
 # Keepassx
 dnf install -y keepassxc
