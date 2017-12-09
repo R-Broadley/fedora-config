@@ -1,3 +1,7 @@
 [org/gnome/nautilus/preferences]
 click-policy='double'
+show-delete-permanently=false
+
+[org/gtk/settings/file-chooser]
 sort-directories-first=true
+
