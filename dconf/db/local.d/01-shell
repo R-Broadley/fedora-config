@@ -39,7 +39,7 @@ current-workspace-only=true
 
 [org/gnome/desktop/interface]
 clock-show-date=true
-gtk-theme='Arc-Darker'
+gtk-theme='Adapta'
 icon-theme='Papirus'
 menus-have-tearoff=true
 show-battery-percentage=true
