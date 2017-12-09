@@ -80,7 +80,8 @@ dnf install -y gnome-shell-extension-{alternate-tab,common,drive-menu,openweathe
 # Backroungs
 dnf install -y f26-backgrounds-animated
 # gtk theme
-dnf install -y arc-theme
+dnf copr enable -y heikoada/gtk-themes
+dnf install -y adapta-gtk-theme
 # Papirus icon theme
 dnf copr enable -y dirkdavidis/papirus-icon-theme
 dnf install -y papirus-icon-theme
