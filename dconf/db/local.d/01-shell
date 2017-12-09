@@ -76,7 +76,7 @@ translate=true
 name='Graphics.directory'
 apps=['']
 categories=['Graphics', 'Photography']
-excluded-apps=['evince.desktop', 'simple-scan.desktop']
+excluded-apps=['eog.desktop', 'evince.desktop', 'simple-scan.desktop']
 translate=true
 
 [org/gnome/desktop/app-folders/folders/office]
@@ -102,7 +102,7 @@ translate=true
 
 [org/gnome/desktop/app-folders/folders/utilities]
 name='Utilities.directory'
-apps=['dropbox.desktop', 'evince.desktop', 'org.gnome.DejaDup.desktop', 'simple-scan.desktop']
+apps=['dropbox.desktop', 'eog.desktop', 'evince.desktop', 'org.gnome.DejaDup.desktop', 'simple-scan.desktop']
 categories=['Utility']
 excluded-apps=['atom.desktop', 'gnome-tweak-tool.desktop', 'org.keepassxc.desktop', 'org.gnome.Nautilus.desktop']
 translate=true
