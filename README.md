@@ -1,1 +1,1 @@
-# fedora-config
+# gnome-os-config

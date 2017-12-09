@@ -1,0 +1,70 @@
+#!/bin/bash
+
+set -e
+./check-root
+
+# Set Hostname
+echo 'Enter a Hostname:'
+read hstnme
+echo $hstnme > /etc/hostname
+
+
+# Lock the root account
+passwd -l root
+
+# Remove unwanted software
+# System Software
+
+# GUI software
+eopkg remove -y gparted hexchat rhythmbox thunderbird
+
+
+# Software Installs
+# CLI tools
+eopkg install -y rsync
+
+# Generic OS GUI software and Gnome packages
+eopkg install -y deja-dup geary gimp gnome-{music,weather} gthumb simple-scan
+
+# Keepassx
+eopkg install -y keepassx
+
+# Dropbox
+eopkg install -y nautilus-dropbox
+
+# Powerline
+eopkg install -y powerline powerline-fonts
+echo "source /usr/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh" > /etc/profile.d/powerline.sh
+
+# Google Chrome
+eopkg build --ignore-safety https://raw.githubusercontent.com/solus-project/3rd-party/master/network/web/browser/google-chrome-stable/pspec.xml
+eopkg install -y google-chrome-*.eopkg
+rm google-chrome-*.eopkg
+
+# Zotero
+cwd=$(pwd)
+cd install_scripts/zotero
+./install_zotero
+cd $cwd
+
+# Shell extensions
+# From repos
+# eopkg install -y 
+
+
+# Confogure system defaults
+# ./configure-system-defaults
+
+
+# For existing users:
+for dir in /home/*; do
+    if [ ! $dir = "/home/lost+found" ]; then
+        # Get user name
+        user="$(basename $dir)"
+        # File Templates
+        rsync -a Templates $dir
+        chown $user:$user -R $dir/Templates
+        # Reset all dconf keys to default
+        sudo -u $user dconf reset -f /
+    fi
+done
