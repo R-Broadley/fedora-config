@@ -1,6 +1,6 @@
 [org/gnome/shell]
 favorite-apps=['org.gnome.Nautilus.desktop', 'firefox.desktop', 'libreoffice-writer.desktop']
-enabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'alternate-tab@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'openweather-extension@jenslody.de', 'TopIcons@phocean.net', 'dash-to-dock@micxgx.gmail.com']
+enabled-extensions=['places-menu@gnome-shell-extensions.gcampax.github.com', 'alternate-tab@gnome-shell-extensions.gcampax.github.com', 'TopIcons@phocean.net', 'dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
 
 
 [org/gnome/shell/extensions/dash-to-dock]
@@ -8,27 +8,25 @@ dock-fixed=false
 autohide=true
 autohide-in-fullscreen=false
 require-pressure-to-show=true
-itellihide=true
+intellihide=true
 intellihide-mode='ALL_WINDOWS'
+click-action='previews'
+scroll-action='switch-workspace'
 icon-size-fixed=true
-dash-max-icon-size=uint32 48
+dash-max-icon-size=int32 48
 isolate-workspaces=false
 apply-custom-theme=false
 custom-theme-shrink=true
 custom-theme-running-dots=true
-custom-background-color=true
-background-color='#000000'
-
-
-[org/gnome/shell/extensions/openweather]
-city='51.5073219,-0.1276473>London, Greater London, England, UK>-1'
-pressure-unit='bar'
-unit='celsius'
-wind-speed-unit='kph'
+force-straight-corner=true
 
 
 [org/gnome/shell/extensions/topicons]
 tray-pos='right'
+
+
+[org/gnome/shell/extensions/user-theme]
+name='Adapta'
 
 
 [org/gnome/desktop/datetime]
