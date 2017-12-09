@@ -56,7 +56,7 @@ attach-modal-dialogs=false
 
 
 [org/gnome/desktop/app-folders]
-folder-children=['av', 'graphics', 'office', 'system', 'utilities']
+folder-children=['av', 'graphics', 'office', 'settings', 'system', 'utilities']
 
 
 [org/gnome/desktop/app-folders/folders/av]
@@ -78,6 +78,13 @@ name='Office.directory'
 apps=['']
 categories=['Office']
 excluded-apps=['evince.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Contacts.desktop']
+translate=true
+
+[org/gnome/desktop/app-folders/folders/settings]
+name='X-GNOME-SystemSettings.directory'
+apps=['']
+categories=['Settings']
+excluded-apps=['']
 translate=true
 
 [org/gnome/desktop/app-folders/folders/system]
