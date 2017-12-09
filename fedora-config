@@ -65,7 +65,10 @@ dnf install -y google-chrome-stable_current_x86_64.rpm
 rm google-chrome-stable_current_x86_64.rpm
 
 # Zotero
-./install_scripts/zotero/zotero
+cwd=$(pwd)
+cd install_scripts/zotero
+./zotero
+cd $cwd
 
 # Shell extensions
 # From repos

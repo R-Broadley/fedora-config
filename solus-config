@@ -44,7 +44,7 @@ rm google-chrome-*.eopkg
 # Zotero
 cwd=$(pwd)
 cd install_scripts/zotero
-./install_zotero
+./zotero
 cd $cwd
 
 # Shell extensions
