@@ -53,6 +53,14 @@ center-new-windows=true
 attach-modal-dialogs=false
 
 
+[org/gnome/desktop/wm/preferences]
+button-layout='appmenu:close'
+
+
+[org/gnome/settings-daemon/plugins/xsettings]
+overrides={'Gtk/ShellShowsAppMenu': <0>, 'Gtk/DecorationLayout': <'menu:close'>}
+
+
 [org/gnome/desktop/app-folders]
 folder-children=['av', 'graphics', 'office', 'settings', 'system', 'utilities']
 
