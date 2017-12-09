@@ -56,7 +56,6 @@ attach-modal-dialogs=false
 [org/gnome/desktop/wm/preferences]
 button-layout='appmenu:close'
 
-
 [org/gnome/settings-daemon/plugins/xsettings]
 overrides={'Gtk/ShellShowsAppMenu': <0>, 'Gtk/DecorationLayout': <'menu:close'>}
 
@@ -101,7 +100,7 @@ excluded-apps=['org.gnome.Terminal.desktop']
 translate=true
 
 [org/gnome/desktop/app-folders/folders/utilities]
-name='Utilities.directory'
+name='Utility.directory'
 apps=['dropbox.desktop', 'eog.desktop', 'evince.desktop', 'org.gnome.DejaDup.desktop', 'simple-scan.desktop']
 categories=['Utility']
 excluded-apps=['atom.desktop', 'gnome-tweak-tool.desktop', 'org.keepassxc.desktop', 'org.gnome.Nautilus.desktop']
