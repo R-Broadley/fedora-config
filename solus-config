@@ -49,11 +49,11 @@ cd $cwd
 
 # Shell extensions
 # From repos
-# eopkg install -y 
+# eopkg install -y
 
 
 # Confogure system defaults
-# ./configure-system-defaults
+./configure-system-defaults
 
 
 # For existing users:
