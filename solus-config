@@ -41,12 +41,6 @@ eopkg build --ignore-safety https://raw.githubusercontent.com/solus-project/3rd-
 eopkg install -y google-chrome-*.eopkg
 rm google-chrome-*.eopkg
 
-# Zotero
-cwd=$(pwd)
-cd install_scripts/zotero
-./zotero
-cd $cwd
-
 # Shell extensions
 # From repos
 # eopkg install -y
