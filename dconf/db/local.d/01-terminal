@@ -1,0 +1,5 @@
+[org/gnome/terminal/legacy]
+default-show-menubar=false
+menu-accelerator-enabled=true
+theme-variant='dark'
+
