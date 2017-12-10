@@ -2,7 +2,7 @@
 
 set -e
 
-version=5.0.28
+version=5.0.29
 
 wget https://download.zotero.org/client/release/"$version"/Zotero-"$version"_linux-x86_64.tar.bz2
 sudo tar xfj Zotero-"$version"_linux-x86_64.tar.bz2 -C /opt
