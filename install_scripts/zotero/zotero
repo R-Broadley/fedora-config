@@ -2,7 +2,7 @@
 
 set -e
 
-version=5.0.33
+version=5.0.34
 
 wget https://download.zotero.org/client/release/"$version"/Zotero-"$version"_linux-x86_64.tar.bz2
 
