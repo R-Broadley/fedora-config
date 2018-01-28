@@ -3,13 +3,17 @@
 set -e
 
 version=5.0.34
+archive_file=Zotero-"$version"_linux-x86_64.tar.bz2
 
-wget https://download.zotero.org/client/release/"$version"/Zotero-"$version"_linux-x86_64.tar.bz2
+if [ ! -f "$archive_file" ]; then
+  wget https://download.zotero.org/client/release/"$version"/"$archive_file"
+fi
 
 if [ "$1" == "current" ]; then
   mkdir -p ~/.local/opt
   tar xfj Zotero-"$version"_linux-x86_64.tar.bz2 -C ~/.local/opt
-  rsync -Du --chmod=664 resources/zotero.desktop ~/.local/share/applications
+  rsync -Du --chmod=774 resources/zotero.desktop ~/.local/share/applications
+  sed "s:Exec=:&$HOME/.local:" ~/.local/share/applications/zotero.desktop
   rsync -rlDu --chmod=D775,F664 resources/icons ~/.local/share
 elif [ "$1" == "all" ]; then
   sudo tar xfj Zotero-"$version"_linux-x86_64.tar.bz2 -C /opt
